@@ -441,7 +441,8 @@ def task_render(args, dag: DAG | None = None) -> None:
         # property: {attr}
         # ----------------------------------------------------------
         """
-            ) + str(getattr(ti.task, attr))
+            )
+            + str(getattr(ti.task, attr))
         )
 
 

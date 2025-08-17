@@ -428,6 +428,7 @@ class TestCliTasks:
         assert 'echo "2016-01-08"' in output
         print(output)
 
+
 def _set_state_and_try_num(ti, session):
     ti.state = TaskInstanceState.QUEUED
     ti.try_number += 1
